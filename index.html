@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adopt🐶</title>
+    <style>
+      body {
+        background: linear-gradient(
+          108.1deg,
+          rgb(167, 220, 225) 11.2%,
+          rgb(217, 239, 242) 88.9%
+        );
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        color: rgb(29, 127, 134);
+      }
+
+      h2 {
+        background-color: #66bfbf;
+        color: white;
+        text-align: center;
+        border: 0.5px solid rgb(50, 149, 156);
+        padding: 15px;
+        font-weight: lighter;
+        border-radius: 10px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        text-align: center;
+        line-height: 1.5;
+        font-size: 15px;
+        margin: 15px 0 15px;
+      }
+
+      a,
+      strong,
+      span {
+        color: rgb(29, 127, 134);
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background-color: #66bfbf;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: 0.5px solid rgb(50, 149, 156);
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        background-color: rgb(29, 127, 134);
+      }
+
+      .learn-more {
+        color: rgb(29, 127, 134);
+        text-decoration: under;
+        font-size: 16px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+      }
+      .container {
+        max-width: 620px;
+        margin: 0 auto;
+        padding: 20px 60px;
+        background-color: white;
+        border-radius: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🦴 Adopt, don't shop! 🦴</h1>
+      <h2>Your best friend is waiting for you at the shelter...</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/024/803/original/dog.jpg?1642068478"
+        alt="Sad dog"
+      />
+      <p>
+        With over 200,000 dogs euthanised throughout Australia each year in
+        shelters, the message of ‘Adopt, Don’t Shop’ is literally saving lives
+        each day.
+      </p>
+      <p>
+        <strong>Always Adopt, Don’t Shop.</strong> <br />Ensure your companion
+        animals are desexed, as well as registered and microchipped so they can
+        be returned to you if they ever are lost. And remember, an animal is a
+        friend for life!
+      </p>
+      <br />
+      <hr />
+      <p>
+        Click
+        <a
+          href="https://www.petrescue.com.au/"
+          target="_blank"
+          class="learn-more"
+          >here</a
+        >
+        to access an Australia-wide searchable database for dogs for adoption!
+        ❤️
+      </p>
+      <hr />
+      <button>Adopt now 🐕</button>
+      <p class="footer">
+        This page was built by
+        <a href="https://www.juliana-lacerda.com" target="_black">
+          Juliana Lacerda</a
+        >
+        with <span>HTML</span>, <span>CSS</span> and <span>JavaScript</span>.
+      </p>
+    </div>
+    <script>
+      function adopt() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+        if (age >= 18) {
+          let email = prompt("What is your email address?");
+          alert(
+            "Thank you " +
+              name +
+              " for choosing to adopt! We'll be in touch by email! 💌"
+          );
+        } else {
+          alert(
+            "Sorry " +
+              name +
+              ". Only those 18 years and over can adopt a pet. 💔"
+          );
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", adopt);
+    </script>
+  </body>
+</html>
