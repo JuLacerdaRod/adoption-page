@@ -97,7 +97,7 @@
       <h2>Your best friend is waiting for you at the shelter...</h2>
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/024/803/original/dog.jpg?1642068478"
-        alt="Sad dog"
+        alt="Shelter dog"
       />
       <p>
         With over 200,000 dogs euthanised throughout Australia each year in
@@ -120,11 +120,21 @@
           class="learn-more"
           >here</a
         >
-        to access an Australia-wide searchable database for dogs for adoption!
-        ❤️
+        to access an Australia-wide searchable database for pets for adoption.
+      </p>
+      <p>🐕🐠🐎🐦🐇🐍🐈‍⬛🐔🐖🦆🐀🦜🐑🐐</p>
+      <p>
+        Click
+        <a
+          href="https://www.petrescue.com.au/rescue_directory"
+          target="_blank"
+          class="learn-more"
+          >here</a
+        >
+        to access our Rescue Directory.
       </p>
       <hr />
-      <button>Adopt now 🐕</button>
+      <button>Adopt now 🐕‍🦺</button>
       <p class="footer">
         This page was built by
         <a href="https://www.juliana-lacerda.com" target="_black">
@@ -136,6 +146,10 @@
     <script>
       function adopt() {
         let name = prompt("What is your name?");
+        if (name.length < 1) {
+          let name = prompt("Please enter you name...");
+        }
+
         let age = prompt("How old are you?");
         if (age >= 18) {
           let email = prompt("What is your email address?");
@@ -144,6 +158,7 @@
               name +
               " for choosing to adopt! We'll be in touch by email! 💌"
           );
+          button.innerHTML = "Thanks for choosing to adopt! ❤️";
         } else {
           alert(
             "Sorry " +
