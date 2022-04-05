@@ -150,12 +150,16 @@
     </div>
     <script>
       function adopt() {
-        let name = prompt("What is your name?");
+        var name = prompt("What is your name?");
         if (name.length < 1) {
-          let name = prompt("Please enter you name...");
+          var name = prompt("Please enter your name...");
         }
 
-        let age = prompt("How old are you?");
+        var age = prompt("How old are you?");
+        if (age.length < 1) {
+          var age = prompt("Please enter your age...");
+        }
+
         if (age >= 18) {
           let email = prompt("What is your email address?");
           alert(
